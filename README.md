@@ -22,7 +22,17 @@ Express
 - npm install --save-dev @types/express @types/multer // igen, för att det inte fungerade att ansluta till servern
 
 ## Servern körs på:
+- npm start
 
-npx ts-node server.ts
+### För att installera typescript globalt
+- npm install -g typescript
+- tsc --version // Om det här kommandot inte visar vilken verion det är måste du skriva följande:
+- Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Prova igen med tsc --version  om det visar vilken version är typescript korrekt installerat
+När du har en tsconfig.json kan du använda TypeScript-kompilatorn (tsc) för att bygga ditt projekt. I terminalen, i din projektmapp (där tsconfig.json finns), skriv: tsc
+
+Nu måste jag köra tsc varje gång innan jag committar, och använta .ts filen för utveckling samt .js filen till att deploya med.
+
+
 
 
