@@ -1,0 +1,14 @@
+# Ignorera miljövariabler
+.env
+
+# Ignorera beroenden (går att installera igen)
+node_modules/
+
+# Ignorera loggfiler och byggfiler
+*.log
+dist/
+build/
+
+# Ignorera OS-specifika filer
+.DS_Store
+Thumbs.db

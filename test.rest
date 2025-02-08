@@ -1,0 +1,31 @@
+# @name CreateUser
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+  "name": "LAlala",
+  "password": "test"
+}
+
+###
+
+# @name LoginUser
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+"name": "LAlala",
+"password": "test"
+}
+
+###
+
+# @name getUser
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjksIm5hbWUiOiJMb2xsbyIsImlhdCI6MTczNzcxMTc4NSwiZXhwIjoxNzM4MzE2NTg1fQ.XLokVXkOwciiBbNYfTo4a7lS2bFqKGJ3iOQTPD8jBwQ
+
+###
+
+DELETE http://localhost:3000/user/17
+
+###
