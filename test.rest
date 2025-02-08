@@ -1,10 +1,29 @@
+POST http://localhost:3000/upload
+Content-Type: multipart/form-data; boundary=---boundary
+
+-----boundary
+Content-Disposition: form-data; name="image"; filename="NalleBrown.jpg"
+Content-Type: image/jpeg
+
+<FILE_CONTENT_HERE>
+-----boundary--
+
+###
+
+POST http://localhost:3000/upload
+Content-Type: image/jpeg
+
+< ./NalleBrown.jpg
+
+###
+
 # @name CreateUser
 POST http://localhost:3000/users/register
 Content-Type: application/json
 
 {
-  "name": "LAlala",
-  "password": "test"
+  "name": "Jojjan",
+  "password": "Password!222"
 }
 
 ###
@@ -14,15 +33,15 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-"name": "LAlala",
-"password": "test"
+"name": "Jojjan",
+"password": "Password!222"
 }
 
 ###
 
 # @name getUser
 GET http://localhost:3000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjksIm5hbWUiOiJMb2xsbyIsImlhdCI6MTczNzcxMTc4NSwiZXhwIjoxNzM4MzE2NTg1fQ.XLokVXkOwciiBbNYfTo4a7lS2bFqKGJ3iOQTPD8jBwQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6IkpvamphbiIsImlhdCI6MTczOTAyNjM5NCwiZXhwIjoxNzM5NjMxMTk0fQ.ImXam9MPAVX6te6vVjZHH_UJEXxqzAnqoVTS80RbAIE
 
 ###
 
