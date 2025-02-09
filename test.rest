@@ -17,23 +17,55 @@ Content-Type: image/jpeg
 
 ###
 
+# @name CreateAdmin
+POST http://localhost:3000/admin/register
+Content-Type: application/json
+
+{
+  "name": "Carina",
+  "password": "Password!222"
+}
+
+###
+
+# @name LoginAdmin
+POST http://localhost:3000/auth/login_admin
+Content-Type: application/json
+
+{
+"name": "Carina",
+"password": "Password!222"
+}
+
+###
+
+# @name getAdmin
+GET http://localhost:3000/admin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6IkhhbnMiLCJpYXQiOjE3MzkwODQxMTYsImV4cCI6MTczOTY4ODkxNn0.tnf0_FM_Du5fJXwPXlFU3_6yxCTZfNqRG7qQ-wqD4YY
+
+###
+
+DELETE http://localhost:3000/admin/17
+
+###
+
 # @name CreateUser
 POST http://localhost:3000/users/register
 Content-Type: application/json
 
 {
-  "name": "Jojjan",
+  "name": "Hans",
   "password": "Password!222"
 }
 
 ###
 
 # @name LoginUser
-POST http://localhost:3000/auth/login
+POST http://localhost:3000/auth/login_user
 Content-Type: application/json
 
 {
-"name": "Jojjan",
+"name": "Hans",
 "password": "Password!222"
 }
 
@@ -41,7 +73,7 @@ Content-Type: application/json
 
 # @name getUser
 GET http://localhost:3000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6IkpvamphbiIsImlhdCI6MTczOTAyNjM5NCwiZXhwIjoxNzM5NjMxMTk0fQ.ImXam9MPAVX6te6vVjZHH_UJEXxqzAnqoVTS80RbAIE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkNhcmluYSIsImlhdCI6MTczOTA4NDE1NiwiZXhwIjoxNzM5Njg4OTU2fQ.HpCuqwt4ZKYlagwuUc78dioIshHtxsNcS4Ikt8vEH9c
 
 ###
 

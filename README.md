@@ -1,5 +1,5 @@
 # Lps-Tuva Backend
-
+The site isi live at: https://lpstuva.onrender.com/
 
 ### Ramverk: 
 Express
@@ -47,6 +47,10 @@ Nu måste jag köra tsc varje gång innan jag committar, och använta .ts filen 
 ### Cookies:
 - npm install cookie-parser
 - npm install --save-dev @types/cookie-parser
+
+## Inloggning
+Det finns en inloggning för Admin, med eget token och en annan inloggning för users med
+ett annat token.
 
 
 
